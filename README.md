@@ -664,55 +664,6 @@ NSColorPanelColorDidChangeNotification
 
 读没有注释代码的痛苦你我都体会过，好的注释不仅能让人轻松读懂你的程序，还能提升代码的逼格。注意注释是为了让别人看懂，而不是仅仅你自己。
 
-###文件注释
-
-每一个文件都**必须**写文件注释，文件注释通常包含
-
-- 文件所在模块
-- 作者信息
-- 历史版本信息
-- 版权信息
-- 文件包含的内容，作用
-
-一段良好文件注释的栗子：
-
-```objective-c
-/*******************************************************************************
-	Copyright (C), 2011-2013, Andrew Min Chang
-
-	File name: 	AMCCommonLib.h
-	Author:		Andrew Chang (Zhang Min) 
-	E-mail:		LaplaceZhang@126.com
-	
-	Description: 	
-			This file provide some covenient tool in calling library tools. One can easily include 
-		library headers he wants by declaring the corresponding macros. 
-			I hope this file is not only a header, but also a useful Linux library note.
-			
-	History:
-		2012-??-??: On about come date around middle of Year 2012, file created as "commonLib.h"
-		2012-08-20: Add shared memory library; add message queue.
-		2012-08-21: Add socket library (local)
-		2012-08-22: Add math library
-		2012-08-23: Add socket library (internet)
-		2012-08-24: Add daemon function
-		2012-10-10: Change file name as "AMCCommonLib.h"
-		2012-12-04: Add UDP support in AMC socket library
-		2013-01-07: Add basic data type such as "sint8_t"
-		2013-01-18: Add CFG_LIB_STR_NUM.
-		2013-01-22: Add CFG_LIB_TIMER.
-		2013-01-22: Remove CFG_LIB_DATA_TYPE because there is already AMCDataTypes.h
-
-	Copyright information: 
-			This file was intended to be under GPL protocol. However, I may use this library
-		in my work as I am an employee. And my company may require me to keep it secret. 
-		Therefore, this file is neither open source nor under GPL control. 
-		
-********************************************************************************/
-```
-
-*文件注释的格式通常不作要求，能清晰易读就可以了，但在整个工程中风格要统一。*
-
 ###代码注释
 
 好的代码应该是“自解释”（self-documenting）的，但仍然需要详细的注释来说明参数的意义、返回值、功能以及可能的副作用。
