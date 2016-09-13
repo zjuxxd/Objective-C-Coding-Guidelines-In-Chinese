@@ -920,3 +920,4 @@ array.release;
 @property (nonatomic, weak) id <IPCConnectHandlerDelegate> delegate;
 ```
 test
+test2
